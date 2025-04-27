@@ -16,7 +16,6 @@ interface EventData<T> {
 type EventListerCallback<T> = (event: EventData<T>) => unknown;
 
 interface IEventListeners<T> {
-  listeners: HashTable<EventListerCallback<T>>;
   addEventListener: (type: EventType, cb: EventListerCallback<T>) => void;
   removeEventListener: (type: EventType) => void;
   emitEvent: (type: EventData<T>) => void;
@@ -37,7 +36,7 @@ class EventLinkedList<T> implements IEventListeners<T>, ILinkedList<T> {
   private head: Node<T> | null = null;
   private tail: Node<T> | null = null;
   private size = 0;
-  listeners: HashTable<EventListerCallback<T>> = new HashTable();
+  private listeners: HashTable<EventListerCallback<T>> = new HashTable();
 
   addEventListener(type: EventType, cb: EventListerCallback<T>) {
     this.listeners.set(type, cb);
