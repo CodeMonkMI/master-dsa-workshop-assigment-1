@@ -13,6 +13,8 @@ To get all nodes inserted with last n seconds. Then we need to store the timesta
 
 Here we are using prepend. Because also save space for tail node or decrease time complexity (if tail not taken). One more important is we retrieving lasted node. When we prepend the node, all the lasted will come forward. It will also decrease unnecessary actions or complexity
 
+##### [Time Aware LinkedList](./EventLinkedList/EventLinkedList.ts)
+
 ### Future
 
 In the future if we want to remove the oldest node, then this implementation won't be suitable at all.
@@ -48,6 +50,8 @@ We need three different method for register, remove and emit a event.
 - For emitting, need event data including event type
 
 For insert/delete/update actions we will call emitEvent method with event data.
+
+##### [Event Driven LinkedList](./EventLinkedList/EventLinkedList.ts)
 
 ### Future
 

@@ -18,6 +18,8 @@ To ensue scalability, follow single responsibility and dry principle. Most the
 
 For availability check, there is stand alone method `getStock` which is use to retrieve available stock quantity. Although stock availability is checked before do main operation.
 
+##### [Inventory Management](./InventoryManagement/InventoryManagement.ts)
+
 ### Complexity
 
 | Method          | Time Complexity | Space Complexity |
@@ -30,7 +32,7 @@ For availability check, there is stand alone method `getStock` which is use to r
 | `setStock`      | O(1)            | 0(1)             |
 | `getStock`      | O(1)            | 0(1)             |
 
-## Blog Management
+## Recent Posts Feed
 
 ### Required Features
 
@@ -43,6 +45,12 @@ For availability check, there is stand alone method `getStock` which is use to r
 For constant time insertion and removal , required HashTable. We need to maintain latest 10 post. So we can also achieve this with HashTable. But we also need to main chronological order. For this we need to use a LinkedList as well. It will help use to maintain latest 10 post and chronological order.
 
 We will store posts in HashTable to store posts and use LinkedList to store post id to maintain chronological order. also help use to remove the oldest node with constant time complexity.
+
+### Implementation
+
+Implementation is very simple. except maintain last 10 posts.
+
+##### [Recent Posts Feed](./BlogManagement/BlogManagement.ts)
 
 ### Complexity
 

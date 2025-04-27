@@ -13,6 +13,15 @@
 1. Clone a hash table with chaining.
 1. Compare array vs. hash set lookup performance.
 
+# Data Structure Used
+
+- [CustomArray](./DataStructures/CustomArray.ts)
+- [DynamicArray](./DataStructures/DynamicArray.ts)
+- [Functions](./DataStructures/Functions.ts)
+- [HashSet](./DataStructures/HashSet.ts)
+- [HashTable](./DataStructures/HashTable.ts)
+- [SingleLinkedList](./DataStructures/SingleLinkedList.ts)
+
 # 1.Insert at the beginning of a dynamic array
 
 Array is contiguous data structure which means each item of array will assign in memory one after one. Array take fixed number of item. We need to specify that during creation of an array.
